@@ -10,12 +10,12 @@ public class Y extends X {
     return obj;
     };*/
   //Convarainza si es soportada en lo que retorna si es aceptada
-  /*public C foo(B obj){
+  public C foo(B obj){
     obj.too();
     System.out.println("Foo desde covarianza en lo retorna Y");
     C obj2 = new ClaseC();
     return obj2;
-  };*/
+  };
   //contravarianza no es sopoirtada Y cannot overide foo(B) in X
   /*public A foo(B obj){
     obj.too();
@@ -33,12 +33,12 @@ public class Y extends X {
  
   //Contravarainza para el elemento que recibe no es aceptado se sobreescribe el metodo
 
-  public B foo(A obj){
+  /*public B foo(A obj){
     obj.too();
     System.out.println("Foo contravarainza en lo que recibe desde Y");
     B obj2 = new ClaseC();
     return obj2;
-  };
+  };*/
 
 
 
