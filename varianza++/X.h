@@ -10,7 +10,7 @@ class X {
       B* obj2 = new ClaseB;
       std::cout<<"FOO DESDE X\n";
       return obj2;
-    }
+    }*/
     
 };
 

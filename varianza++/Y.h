@@ -22,12 +22,12 @@ class Y:public X {
       return obj2;
       }*/
     //contravarainza no es soportada para el elemento que reciben
-    /*A* goo(B *obj){
+    A* goo(B *obj){
       obj->goo();
       B* obj2 = new ClaseC;
       std::cout<<"FOO DESDE Y\n";
       return obj2;
-    }*/
+    }
     //covarianza para el elemnto que reciben no es aceptada o 
     //es metodo sobrecargado o con virtual=0 el compilardor pienza que es 
     //otra funcion
@@ -39,11 +39,11 @@ class Y:public X {
     }*/
     //contravarainze para el elemento qeu reciben no es aceptada o
     //es metodo sobrecargado y con virtual =0 el compilador piensa que es otra funcion
-    B* goo(A *obj){
+    /*B* goo(A *obj){
       B* obj2 = new ClaseC;
       std::cout<<"FOO DESDE contravairanze en el elmento que recibe Y\n";
       return obj2;
-    }
+    }*/
     
 
 
