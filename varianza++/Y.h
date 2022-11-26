@@ -15,10 +15,16 @@ class Y:public X {
       return obj2;
     }*/
     //covarainza si es soportdada
-    C* goo(B *obj){
+    /*C* goo(B *obj){
       obj->goo();
       C* obj2 = new ClaseC;
       std::cout<<"FOO DESDE usando convaraianza en el elemento que recibe Y\n";
+      return obj2;
+      }*/
+    A* goo(B *obj){
+      obj->goo();
+      B* obj2 = new ClaseC;
+      std::cout<<"FOO DESDE Y\n";
       return obj2;
     }
     
