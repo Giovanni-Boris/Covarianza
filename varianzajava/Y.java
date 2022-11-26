@@ -24,12 +24,22 @@ public class Y extends X {
     return obj;
   };*/
   //Covarainza para el elemento que recibe no es aceptado se sobreescribe el metodo
-  public B foo(C obj){
+  /*public B foo(C obj){
     obj.too();
     System.out.println("Foo desde  covarainza en lo que recibeY");
     B obj2 = new ClaseC();
     return obj;
+  };*/
+ 
+  //Contravarainza para el elemento que recibe no es aceptado se sobreescribe el metodo
+
+  public B foo(A obj){
+    obj.too();
+    System.out.println("Foo contravarainza en lo que recibe desde Y");
+    B obj2 = new ClaseC();
+    return obj2;
   };
+
 
 
 }
